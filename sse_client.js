@@ -188,6 +188,14 @@ module.exports = function (RED) {
                     url = mustache.render(url, msg);
                 }
 
+                if(msg.method) {
+                    options.method = msg.method;
+                }
+
+                if(msg.payload) {
+                    options.payload = msg.payload;
+                }
+
                 // Start a new stream (i.e. send a new http get)
                 node.client = new EventSource(url, options);
 
