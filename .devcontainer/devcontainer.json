@@ -1,0 +1,6 @@
+{
+  "image": "nodered/node-red",
+  "forwardPorts": [
+    1880
+  ]
+}

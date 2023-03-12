@@ -36,5 +36,8 @@
         "nodes": {
             "sse-client": "sse_client.js"
         }
+    },
+    "scripts": {
+        "dev": "cd $HOME && npm install /workspaces/node-red-contrib-sse-client && node-red"
     }
 }
